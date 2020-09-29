@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Task Measurement</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input__area">
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <h1>Task Manager</h1>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control task__name--input"
+                placeholder="Task Name"
+                value=""
+              />
+            </div>
+            <div class="col-md-3">
+              <input
+                type="time"
+                class="form-control task__start--input"
+                placeholder="Start Time"
+              />
+            </div>
+            <div class="col-md-3">
+              <input
+                type="time"
+                class="form-control task__end--input"
+                placeholder="Finish Time"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-12 my-3">
+              <button
+                class="btn btn-dark btn-lg btn-block large-button task__submit"
+              >
+                Ok
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="task__area"></div>
+      <div class="task__day"></div>
+      <div class="tasks__result">
+        <div class="success__tasks col-6">
+          <h2 class="success__title">Success</h2>
+        </div>
+        <div class="failure__tasks col-6">
+          <h2 class="failure__title">Failure</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
